@@ -19,19 +19,13 @@ var randomDirection = function(directions) {
 
 TO DO LIST:
   1) Find where get request function goes
+2) mockserver.js line 12
 
 
 BARE MINIMUMS:
   1) Write a test to verify the server responds with a random swim command to a GET request. Then write the functionality that implements this feature.
     //
     /
-
-
-
-
-
-
-
 
   2) Connect the client to the server. Using AJAX, periodically request a random swim command from the server. Confirm your swim team is moving around randomly.
     // Write function to preiodically request swim command from server (setInterval Chatterbox Client)

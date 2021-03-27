@@ -10,10 +10,17 @@
     $.ajax({
       url: 'http://127.0.0.1:3000',
       method: 'GET',
-      success: command => this.move(command),
-      error: (e) => console.log(e)
+      success: command => {
+        console.log('SUCCESS: ', command);
+        SwimTeam.move(command)
+      },
+      error: (e) => console.log('GET request FAILED'),
+      complete: () => {
+        setInterval(getCommand, 50);
+      }
     })
-  }
+  };
+  // getCommand();
 
   /////////////////////////////////////////////////////////////////////
   // The ajax file uplaoder is provided for your convenience!

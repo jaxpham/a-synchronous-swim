@@ -9,7 +9,7 @@ var request = function(url, method, postdata) {
   this.url = url;
   this.method = method;
   this._postData = postdata;
-  this.setEncoding = function() { /* noop */ };
+this.setEncoding = function() { /*return 'utf8'*/ };
 
   this.addListener = this.on = (type, callback) => {
     if (type === 'data') {
